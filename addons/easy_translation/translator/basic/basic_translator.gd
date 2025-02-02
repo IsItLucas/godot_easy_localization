@@ -69,7 +69,11 @@ func _preview_translation() -> void:
 
 
 ## Translate all targets using [member data].
-func translate(language: StringName = TranslationManager.get_language()) -> void:
+func translate(language: StringName = "") -> void:
+	# Automatically update language.
+	if language == "" and not Engine.is_editor_hint():
+		language = TranslationManager.get_language()
+	
 	# Loop through every target.
 	for target: NodeTarget in targets:
 		# Get target node.

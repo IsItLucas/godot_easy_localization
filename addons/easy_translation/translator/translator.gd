@@ -58,6 +58,9 @@ func _get_configuration_warnings() -> PackedStringArray:
 	if targets.size() <= 0:
 		warnings.push_back("No target nodes defined. Did you forget to set them?")
 	
+	# Using default translator error.
+	warnings.push_back("This node has no translation functionality by itself. Consider using either a BasicTranslator or a ConditionalTranslator instead.")
+	
 	# Return the array with errors.
 	return warnings
 
@@ -74,5 +77,5 @@ func _on_language_changed(new_language: StringName) -> void:
 
 
 ## Translate all targets using [member data].
-func translate(_language: StringName = TranslationManager.get_language()) -> void:
+func translate(_language: StringName = "") -> void:
 	pass

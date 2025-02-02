@@ -117,7 +117,11 @@ func _preview_translation() -> void:
 
 
 ## Translate all targets using [member data].
-func translate(language: StringName = TranslationManager.get_language()) -> void:
+func translate(language: StringName = "") -> void:
+	# Automatically update language.
+	if language == "" and not Engine.is_editor_hint():
+		language = TranslationManager.get_language()
+	
 	# Decide which data is going to be used.
 	var data: StringData = true_data
 	for condition: TranslationCondition in conditions:

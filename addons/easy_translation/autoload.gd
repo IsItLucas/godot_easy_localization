@@ -1,3 +1,4 @@
+@icon("res://addons/easy_translation/autoload.png")
 extends Node
 
 

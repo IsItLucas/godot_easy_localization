@@ -1,5 +1,5 @@
 @tool
-@icon("res://addons/easy_translation/target/icon.png")
+@icon("res://addons/easy_translation/target/node/icon.png")
 class_name NodeTarget extends Resource
 
 
