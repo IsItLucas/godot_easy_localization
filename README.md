@@ -1,14 +1,14 @@
-# GEA - Godot Easy Audio 🎵🔊🚀
-GEA (Godot Easy Audio) is a simple and powerful addon for the Godot Engine that enhances audio management by providing an easy way to handle music, sound effects, and transitions.
-With GEA, you can smoothly fade, crossfade, and control audio playback effortlessly. 🎯🛠️🚀
+# GET - Godot Easy Translations 🌍📝🚀
+**GET (Godot Easy Translations)** is a powerful and flexible translation addon for the Godot Engine.
+Unlike traditional translation systems that rely on Project Settings, external tools or CSVs, GET is entirely node-based, allowing for dynamic and intuitive text localization directly in the scene.
 
 
 ## 🌟 Features
-* 🎶 **Music Management**: Play, stop, pause, and crossfade between tracks.
-* 🔊 **Sound Effects System**: Load and play sound effects efficiently with caching.
-* ⚙️ **Customizable Settings**: Adjust volume, pitch, persistence, and playback speed.
-* 🔄 **Seamless Integration**: Built on AudioStreamPlayer with extended capabilities.
-* 📡 **Signal-Based Events**: Detect when sounds finish or transitions complete.
+* 📌 **Node-Based Translation**: Manage translations directly in your scene tree.
+* 📖 **Multi-Language Support**: Easily switch between different languages at runtime.
+* 🔄 **Dynamic Text Formatting**: Support for formatted text using properties from other nodes.
+* ✅ **Conditional Translations**: Change translations based on in-game conditions.
+* 🎯 **Targeted Property Translation**: Apply translations to any property of any node.
 
 
 ## 📥 Installation
@@ -18,33 +18,23 @@ With GEA, you can smoothly fade, crossfade, and control audio playback effortles
 
 
 ## ⚙️ Configuration
-1. Go to `Project > Project Settings > Godot Easy > Audio`.
+1. Go to `Project > Project Settings > Godot Easy > Translation`.
 2. Customize the addon's behaviour as you like.
 3. You're all set! ✅🎉
 
 
 ## 🚀 Getting Started
 
-### Playing Music
-```
-Audio.play_music("res://audio/background.ogg")
-```
+### Basic Translation Setup
+1. Add a BasicTranslator node to your scene.
+2. Assign a StringData resource containing translations.
+3. Define NodeTargets for the properties to be translated.
+4. Run the project, and the text will update automatically!
 
-### Crossfading Music
-```
-Audio.fade_music_to("res://audio/battle.ogg", Audio.MusicFadeTypes.CROSS_FADE, 2.0)
-```
-
-### Playing Sound Effects
-```
-Audio.play_sfx("res://audio/jump.wav")
-```
-
-### Preloading Sound Effects
-```
-Audio.load_sfx("jump", "res://audio/jump.wav")
-Audio.play_sfx("jump")
-```
+### Using Conditional Translations
+1. Add a ConditionalTranslator node.
+2. Assign two StringData resources (one for each condition outcome).
+3. Create TranslationConditions to determine which translation should be applied
 
 
 ## 📖 Documentation
@@ -59,4 +49,4 @@ We welcome contributions! Feel free to open issues or submit pull requests.
 This project is licensed under the MIT License.
 
 ---
-Enhance your game’s audio experience with GEA - Godot Easy Audio! 🎧🔥
+Make translations easier and more powerful with GET - Godot Easy Translations! 🌍🚀
