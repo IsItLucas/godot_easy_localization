@@ -18,7 +18,7 @@ Unlike traditional translation systems that rely on Project Settings, external t
 
 
 ## ⚙️ Configuration
-1. Go to `Project > Project Settings > Godot Easy > Translation`.
+1. Go to `Project > Project Settings > Godot Easy > Localization`.
 2. Customize the addon's behaviour as you like.
 3. You're all set! ✅🎉
 
@@ -26,9 +26,9 @@ Unlike traditional translation systems that rely on Project Settings, external t
 ## 🚀 Getting Started
 
 ### Basic Translation Setup
-1. Add a BasicTranslator node to your scene.
-2. Assign a StringData resource containing translations.
-3. Define NodeTargets for the properties to be translated.
+1. Add a ![translator](https://github.com/user-attachments/assets/3db894fb-300f-40c1-8339-f1fffe9d5beb) `Translator` node to your scene.
+2. Assign a ![string_data](https://github.com/user-attachments/assets/ceca26ab-de6d-42fa-b2cb-5b63b993c525) `StringData` resource containing translations.
+3. Define ![target](https://github.com/user-attachments/assets/f6c2500a-a308-4805-918c-fc6c91b7b730) `NodeTargets` for the properties to be translated.
 4. Run the project, and the text will update automatically!
 
 ### Using Conditional Translations
