@@ -1,5 +1,5 @@
-# GET - Godot Easy Translations 🌍📝🚀
-**GET (Godot Easy Translations)** is a powerful and flexible translation addon for the Godot Engine.
+# GEL - Godot Easy Localization 🌍📝🚀
+**GEL (Godot Easy Localization)** is a powerful and flexible translation addon for the Godot Engine.
 Unlike traditional translation systems that rely on Project Settings, external tools or CSVs, GET is entirely node-based, allowing for dynamic and intuitive text localization directly in the scene.
 
 
@@ -49,4 +49,4 @@ We welcome contributions! Feel free to open issues or submit pull requests.
 This project is licensed under the MIT License.
 
 ---
-Make translations easier and more powerful with GET - Godot Easy Translations! 🌍🚀
+Make translations easier and more powerful with GEL - Godot Easy Localization! 🌍🚀
